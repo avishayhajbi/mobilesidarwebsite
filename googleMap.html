@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+        <head>
+        	<script>
+        		
+	function initialize()
+	{
+	  var mapProp = {
+	    center: new google.maps.LatLng(32.088358,34.804138),
+	    zoom:17,
+	    mapTypeId: google.maps.MapTypeId.ROADMAP
+	  };
+	  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	}
+	
+	function loadScript()
+	{
+	  var script = document.createElement("script");
+	  script.type = "text/javascript";
+	  script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false&callback=initialize";
+	  document.body.appendChild(script);
+	}
+	
+	window.onload = loadScript;
+        	</script>
+                <title>מכון שנקר לתיעוד וחקר העיצוב בישראל</title>
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" type="text/css" href="includes/style.css">
+                <link rel="stylesheet" type="text/css" href="includes/boxes-size.css">
+                <script type="text/javascript" src="includes/modernizr-2.6.2.min.js"></script>
+                <script src="includes/jquery-1.10.1.min.js"></script>
+                <script src="includes/Functions.js"></script>
+
+        </head>
+        <body>
+                <div id="wrapper">
+
+                        <!-- Header -->
+                        <header>
+                                <a href="index.html" class="sidar_header">
+                                        <img src="images/shenkar_logo.png">
+                                        <span class="hebrew">
+                                                מכון שנקר לתיעוד וחקר העיצוב בישראל
+                                        </span>
+                                        <span class="arabic">
+                                                معهد شنكار لتوثيق وبحث التصميم في اسرائيل
+                                        </span>
+                                        <span class="english">
+                                                Shenkar Design Archive &amp; Research Center Israel
+                                        </span>
+                                </a>
+                                <img src="images/sidar_logo_horizontal.jpg" class="sidar-horizontal-logo">
+                        </header>
+
+                <!-- End Header -->
+
+                <!-- Nav bar -->
+                <nav>
+                                  	<!-- insert iframe -->
+                <iframe id="navigation" src="navigation.html" frameborder="0"></iframe>
+                <br>
+                <br>                   
+                <!-- Breadcrumbs -->
+                <section>
+              
+        </section>
+        </nav>      
+        <!-- End Navbar -->
+        
+        <br>
+
+        <!-- Main section -->
+        <div class="address"><p>ביאליק 125 פינת תובל</p></div>
+		<div id="googleMap">
+			<a href="https://developers.google.com/maps/documentation/javascript/" /a> 
+		</div>
+		
+        <!-- Footer -->
+       <footer class="links">
+                <p>מכון שנקר לתיעוד וחקר העיצוב בישראל, כל הזכויות שמורות 2013 &copy;</p>
+                <nav>
+                        <a href="#"><img src="images/facebook_icon.png"></a>
+                        <a href="#"><img src="images/Twitter.png"></a>
+                        <a href="#"><img src="images/google_plus.png"></a>
+                        <a href="#"><img src="images/itunesLogo.png"></a>
+                        <a href="#"><img src="images/RSS.png"></a>
+                        <a href="#"><img src="images/Logo_Youtube.png"></a>
+                </nav>
+        </footer>
+        </div>
+        </body>
+</html>
