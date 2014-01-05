@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+        <head>
+                <title>מכון שנקר לתיעוד וחקר העיצוב בישראל</title>
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" type="text/css" href="includes/style.css">
+                <link rel="stylesheet" type="text/css" href="includes/boxes-size.css">
+                <script type="text/javascript" src="includes/modernizr-2.6.2.min.js"></script>
+                <script src="includes/jquery-1.10.1.min.js"></script>
+                <script src="includes/Functions.js"></script>
+                <!-- 3D -->
+    <script type="text/javascript" src="includes/3D/jquery.min.js"></script>
+	<script type="text/javascript" src="includes/3D/boxshot-vr.js"></script>
+	<script language="javascript"> $(function() { $("img[vr]").vr(); }); </script>
+         <style>
+			.pic3d {margin-top:80px ;display:block;}
+		</style>
+		<!-- end 3D -->
+		
+				<script type="text/javascript">
+                    function goTo(choose)
+                        {
+                            var selected = choose.options[choose.selectedIndex].value;
+                            if(selected != "")
+                            {
+                                location.href = selected;
+                            }
+                        }
+                        
+                $(document).ready(function() {
+					browserNavigator();
+				});
+
+				
+function browserNavigator()
+{
+	var nVer = navigator.appVersion;
+	var nAgt = navigator.userAgent;
+	var browserName  = navigator.appName;
+	var fullVersion  = ''+parseFloat(navigator.appVersion); 
+	var majorVersion = parseInt(navigator.appVersion,10);
+	var nameOffset,verOffset,ix;
+	
+	// In Opera, the true version is after "Opera" or after "Version"
+	if ((verOffset=nAgt.indexOf("Opera"))!=-1) {
+	 browserName = "Opera";
+	 fullVersion = nAgt.substring(verOffset+6);
+	 if ((verOffset=nAgt.indexOf("Version"))!=-1) 
+	   fullVersion = nAgt.substring(verOffset+8);
+	}
+	// In MSIE, the true version is after "MSIE" in userAgent
+	else if ((verOffset=nAgt.indexOf("MSIE"))!=-1) {
+	 browserName = "Microsoft Internet Explorer";
+	 fullVersion = nAgt.substring(verOffset+5);
+	alert(browserName);
+	}
+	// In explorer, the true version is after "Netscape" 
+	else if ((verOffset=nAgt.indexOf("Netscape"))!=-1) {
+	 browserName = "Netscape";
+	 fullVersion = nAgt.substring(verOffset+7);
+	alert(browserName);
+	}
+	// In Chrome, the true version is after "Chrome" 
+	else if ((verOffset=nAgt.indexOf("Chrome"))!=-1) {
+	 browserName = "Chrome";
+	 fullVersion = nAgt.substring(verOffset+7);
+	
+	/* css tables*/
+	var spans = document.getElementsByTagName("ul");
+	for (var i = 0; i < spans.length; i++) {
+	    if (spans[i].className == 'column2') {
+	        spans[i].className = 'ccolumn2';  
+	    }
+	     if (spans[i].className == 'column1') {
+	        spans[i].className = 'ccolumn1';  
+	    }
+	     if (spans[i].className == 'column3') {
+	        spans[i].className = 'ccolumn3';  
+	    }
+	}
+		document.getElementByClassName('column1').className = 'ccolumn1';
+		document.getElementByClassName('column2').className = 'ccolumn2';
+		document.getElementByClassName('column3').className = 'ccolumn3';
+	}
+	// In Safari, the true version is after "Safari" or after "Version" 
+	else if ((verOffset=nAgt.indexOf("Safari"))!=-1) {
+	 browserName = "Safari";
+	 fullVersion = nAgt.substring(verOffset+7);
+	 if ((verOffset=nAgt.indexOf("Version"))!=-1) 
+	   fullVersion = nAgt.substring(verOffset+8);
+	}
+	// In Firefox, the true version is after "Firefox" 
+	else if ((verOffset=nAgt.indexOf("Firefox"))!=-1) {
+	 browserName = "Firefox";
+	 fullVersion = nAgt.substring(verOffset+8);
+	 
+	}
+	// In most other browsers, "name/version" is at the end of userAgent 
+	else if ( (nameOffset=nAgt.lastIndexOf(' ')+1) < 
+	          (verOffset=nAgt.lastIndexOf('/')) ) 
+	{
+	 browserName = nAgt.substring(nameOffset,verOffset);
+	 fullVersion = nAgt.substring(verOffset+1);
+	 
+	 if (browserName.toLowerCase()==browserName.toUpperCase()) {
+	  browserName = navigator.appName;
+	 }
+	}
+	// trim the fullVersion string at semicolon/space if present
+	if ((ix=fullVersion.indexOf(";"))!=-1)
+	   fullVersion=fullVersion.substring(0,ix);
+	if ((ix=fullVersion.indexOf(" "))!=-1)
+	   fullVersion=fullVersion.substring(0,ix);
+	
+	majorVersion = parseInt(''+fullVersion,10);
+	if (isNaN(majorVersion)) {
+	 fullVersion  = ''+parseFloat(navigator.appVersion); 
+	 majorVersion = parseInt(navigator.appVersion,10);
+	}
+	
+}
+
+				</script>
+        </head>
+        <body onload="browserNavigator()">
+                <div id="wrapper">
+                        <!-- Header -->
+                        <header>
+                                <a href="index.html" class="sidar_header">
+                                        <img src="images/shenkar_logo.png">
+                                        <span class="hebrew">
+                                                מכון שנקר לתיעוד וחקר העיצוב בישראל
+                                        </span>
+                                        <span class="arabic">
+                                                معهد شنكار لتوثيق وبحث التصميم في اسرائيل
+                                        </span>
+                                        <span class="english">
+                                                Shenkar Design Archive &amp; Research Center Israel
+                                        </span>
+                                </a>
+                                <img src="images/sidar_logo_horizontal.jpg" class="sidar-horizontal-logo">
+                                
+                        </header>
+
+                <!-- End Header -->
+
+                <!-- Nav bar -->
+                <nav>
+                                   	<!-- insert iframe -->
+                <iframe id="navigation" src="navigation.html" frameborder="0"></iframe>
+                <br>
+                <br>                   
+                <!-- Breadcrumbs -->
+                <section>
+                <ul id="breadcrumbs">
+                        <li><a href="index.html">תחומי עיצוב</a></li>
+                        <p> > </p>
+                        <li><a href="graphic_design.html">תקשורת חזותית</a></li>
+                        <p> > </p>
+                        <li><a href="graphic_design_designers.html">מעצבים</a></li>
+                        <p> > </p>
+                        <li>שם העבודה</li>
+                </ul>
+                <ul id="secondery_menu">
+                        <li><a href="#">הבא</a></li>
+                        <p> | </p>
+                        <li><a href="#">הקודם</a></li>
+                </ul>
+        </section>
+        </nav>  	
+        <!-- End Navbar -->
+        
+        <br>
+
+        <!-- Main section -->
+        <section class="main_section">
+                <ul>
+                <section class="two_on_two" style="background-color: #ffd800">
+                     <img src="includes/3D/vr/image-0-00.jpg" vr="bb5516755e" class="pic3d" width="374" height="374"/>
+                </section>
+                <section class="two_on_two">
+                
+                        <ul class="column1">
+                                <li>שם המעצב</li>
+                                <li>Designer</li>
+                                <li>שם העבודה</li>
+                                <li>שנה</li>
+                                <li>נושא</li>
+                                <li>קטגוריה</li>
+                                <li>לקוח</li>
+                                <li>טכניקה/מדיה</li>
+                                
+                                <li>גודל</li>
+                                <li>פריט</li>
+                                <li>ארץ</li>
+                                <li>צלם</li>
+                                <li>באדיבות</li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                        </ul>
+                     
+                  
+                        <ul class="column2">
+                                <li><a href="graphic_design_designer_outcome.html">קרמן דני</a></li>
+                                <li><a href="graphic_design_designer_outcome.html">Kerman Dani</a></li>
+                                <li>הלילה הוא יבוא</li>
+                                <li>1952</li>
+                                <li>ספרי ילדים</li>
+                                <li>ספרים</li>
+                                <li></li>
+                                <li>Air Brush</li>
+                                <li>10x15</li>
+                                <li></li>
+                                <li>ישראל</li>
+                                <li></li>
+                                 <li><a href="graphic_design_designer_outcome.html">קרמן דני</a></li>
+                                <li></li>
+                               
+                                <li></li>
+                                <li></li>
+                        </ul>
+                     
+                        <ul class="column3">
+                                <li id="keywords" class="graphic_design_bgr"><a href="#">מילות מפתח</a>
+                                        <ul>
+                                                <li><a href="#">שור</a></li>
+                                                <li><a href="#">עצים</a></li>
+                                                <li><a href="#">יער</a></li>
+                                                <li><a href="#">שמש</a></li>
+                                                <li><a href="#">מחרשה</a></li>
+                                        </ul>
+                                </li>
+                                <li id="keywords" class="graphic_design_bgr"><a href="#">עבודות ותהליכים</a>
+                                        <ul>
+                                                <li><a href="#">סקיצות</a></li>
+                                                <li><a href="#">תהליכי עבודה</a></li>
+                                                <li><a href="#">עבודות קשורות</a></li>
+                                               
+                                        </ul>
+                                </li>
+                                 <li id="keywords" class="graphic_design_bgr"><a href="#">מדיה</a>
+                                        <ul>
+                                                <li><a href="#">אירועים</a></li>
+                                                <li><a href="#">תיעוד תערוכות</a></li>
+                                                <li><a href="#">תצוגות</a></li>
+                                                 <li><a href="#">תצלומים מעיתונים</a></li>
+                                               
+                                        </ul>
+                                </li>
+                                 <li id="keywords" class="graphic_design_bgr"><a href="#">תכנים עיוניים</a>
+                                        <ul>
+                                                <li><a href="#">כתבות</a></li>
+                                                <li><a href="#">מאמרים</a></li>
+                                                <li><a href="#">מסמכים</a></li>
+                                                 <li><a href="#">ביבליוגרפיה</a></li>
+                                                 <li><a href="#">אתרים</a></li>
+                                                 <li><a href="#">פילוסופיית עיצוב</a></li>
+                                                 <li><a href="#">טקסטים שונים</a></li>
+                                               
+                                        </ul>
+                                </li>
+                                <li><a href="exhibition-no-1.html">תערוכות במכון</a></li>
+                                 <li id="keywords" class="graphic_design_bgr"><a href="#">קישורים חיצוניים</a>
+                                        <ul>
+                                                <li><a href="#">אתר המעצב</a></li>
+ 
+                                        </ul>
+                                </li>
+                                <li><a href="private_collection.html">הוסף לדף אישי</a></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                               
+                                
+                                <li></li>
+                                <li></li>
+                                
+                                <li style="border-bottom: 0px"><img src="images/soundIcon1.jpg" style="width: 15px; height:15px"></li>
+                                <!-- <li></li>    -->
+                        </ul>
+                </section>
+               
+                             <section class="one_on_four graphic_design_border design_area_section">
+                                <ul id="leftList">
+                                        <li class="headline graphic_design"><a href="graphic_design.html" class="graphic_design">תקשורת חזותית</a></li>
+                                        <li class="graphic_design_border_bottom graphic_design_hover"><a href="graphic_design_searching.html">חיפוש</a></li>
+                                        <li class="graphic_design_border_bottom graphic_design_hover"><a href="graphic_design_designers.html">מעצבים</a></li>
+                                        <li class="graphic_design_border_bottom graphic_design_hover"><a href="graphic_design_categories.html">קטגוריות</a></li>
+                                        <li class="graphic_design_border_bottom graphic_design_hover"><a href="graphic_design_topics.html">נושאים</a></li>
+                                        <li class="graphic_design_border_bottom graphic_design_hover"><a href="graphic_design_years.html">שנים</a></li>
+                                        <li class="graphic_design_border_bottom graphic_design_hover"><a href="#">סגנונות</a></li>
+                                        <li class="graphic_design_border_bottom"></li>
+                                        <li class="graphic_design_border_bottom"></li>
+                                        <li class="graphic_design_border_bottom"></li>
+                                        <li class="graphic_design_border_bottom"></li>
+                                        <li class="graphic_design_border_bottom"></li>
+                                        <li class="graphic_design_border_bottom"></li>
+                                
+                       
+                                       <!-- <li class="graphic_design_border_bottom" style="height: 1px; padding-top:1;margin-top: 1;display: block;border-top: none;"></li>
+                                         <li class="graphic_design_border_bottom"></li>
+                                        <li class="graphic_design_border_bottom"></li> -->
+                                        
+                                        <li class="headline" >מעצבים נוספים בקטגוריה זו</li>
+                                        <li class="designer_categories" >
+                                                <select name="desingner_categories" onchange="location = this.options[this.selectedIndex].value;">
+                                                        <option value="1">new value 1</option>
+                                                        <option value="2">new value 2</option>
+                                                        <option value="3">new value 3</option>
+                                                        <option value="4">new value 4</option>
+                                                        <option value="5">new value 5</option>
+                                                        <option value="6">new value 6</option>
+                                                        <option value="7">new value 7</option>
+                                                        <option value="8">new value 8</option>
+                                                        <option value="9">new value 9</option>
+                                                </select>
+                                        </li>
+                                        <li class="headline aboveDesignerPic" >קטגוריות זמינות למעצב זה</li>       
+                                        <!-- <li style="border-bottom: 0;"></li> -->
+                                        <li class="designer_categories">
+                                                <select name="desingner_categories" onchange="location = this.options[this.selectedIndex].value;">
+                                                        <option value="1">new value 1</option>
+                                                        <option value="2">new value 2</option>
+                                                        <option value="3">new value 3</option>
+                                                        <option value="4">new value 4</option>
+                                                        <option value="5">new value 5</option>
+                                                        <option value="6">new value 6</option>
+                                                        <option value="7">new value 7</option>
+                                                        <option value="8">new value 8</option>
+                                                        <option value="9">new value 9</option>
+                                                </select>
+                                        </li>
+                                         <li class="designerPic" ></li>
+                                        <li class="designer_link graphic_design_border"><a href="graphic_design_designer_outcome.html"><img src="images/daniKerman.jpg"></a></li>
+                                </ul>
+                        </section>
+                        <li><a href="#"><img src="images/G-ShB-Pos-013.jpg"></a></li>
+                        <li><a href="#"><img src="images/G-CArR-GrC-120a.jpg"></a></li>
+                        <section class="two_on_one">
+                                <p class="headline">תיאור</p>
+                        </section>
+                        <li><a href="#"><img src="images/G-CArR-GrC-1625.jpg"></a></li>
+                        <li><a href="#"><img src="images/G-EnZ-Com-002.jpg"></a></li>
+                        <li><a href="#"><img src="images/G-FiU-Com-025.jpg"></a></li>
+                        <li><a href="#"><img src="images/eged-1.jpg"></a></li>
+                </ul>
+        </section>
+        <div class="clear"></div>
+
+        <!-- Footer -->
+        <footer class="links">
+        	<p>מכון שנקר לתיעוד וחקר העיצוב בישראל, כל הזכויות שמורות 2013 &copy;</p>
+                <nav>
+			<a href="#"><img src="images/facebook_icon.png"></a>
+			<a href="#"><img src="images/Twitter.png"></a>
+			<a href="#"><img src="images/google_plus.png"></a>
+			<a href="#"><img src="images/itunesLogo.png"></a>
+			<a href="#"><img src="images/RSS.png"></a>
+			<a href="#"><img src="images/Logo_Youtube.png"></a>
+                </nav>
+        </footer>
+	</div>
+	</body>
+</html>
