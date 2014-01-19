@@ -1,0 +1,24 @@
+#shenkar_logo{
+width:15px;
+height:15px;
+}
+#sidar_logo{
+width:410px;
+}
+ui-footer ui-bar-inherit{
+background:white;
+}
+.newspaper
+{
+-moz-column-count:2; /* Firefox */
+-webkit-column-count:2; /* Safari and Chrome */
+column-count:2;
+}
+.home_page_img{
+margin-right:3px;
+margin-left:1px;
+}
+
+
+
+
