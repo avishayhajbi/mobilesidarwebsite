@@ -2,6 +2,7 @@
 width:15px;
 height:15px;
 }
+
 #sidar_logo{
 width:100%;
 }
@@ -19,6 +20,10 @@ margin-right:3px;
 }
 
 /*column*/
+#pageone .ui-grid-b{
+    display:none;
+}
+
 .ui-block-a,
 .ui-block-b,
 .ui-block-c
