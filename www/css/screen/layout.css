@@ -5,7 +5,7 @@ and (min-width : 600px){
   #pageone .ui-grid-a{
     display:none;
   }
-  #pageone .ui-grid-b{
+  #pageone .ui-grid-c{
       display:block;
     }
 }
