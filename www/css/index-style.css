@@ -16,14 +16,17 @@ background:white;
 column-count:2;
 }
 .home_page_img{
-margin-right:3px;
+    margin-right:3px;
+}
+#pageone .home_page_img {
+  width:150px;
+  height: 150px;
 }
 
 /*column*/
 #pageone .ui-grid-b{
     display:none;
 }
-
 .ui-block-a,
 .ui-block-b,
 .ui-block-c

@@ -1,41 +1,30 @@
 /* Smartphones (portrait) ----------- */
 @media only screen
-and (max-width : 320px) {
+and (min-width : 600px){
   /* Styles */
-
+  #pageone .ui-grid-a{
+    display:none;
+  }
+  #pageone .ui-grid-b{
+      display:block;
+    }
 }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
-and (min-device-width : 480px)
-and (max-device-width : 800px){
+and (min-width : 950px)
+and (max-device-width : 1050px){
  /* Style */
- #pageone .home_page_img {
-    width:150px;
-    height: 150px;
- }
- #pageone .ui-grid-a{
-    display:block;
- }
- #pageone .ui-grid-b {
-    display:none;
- }
+
 }
+
+
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
 and (min-device-width : 800px){
  /* Style */
- #pageone .home_page_img {
-    width:200px;
-    height: 200px;
- }
- #pageone .ui-grid-a{
-    display:none;
- }
- #pageone .ui-grid-b {
-    display:block;
- }
+
 }
 
 

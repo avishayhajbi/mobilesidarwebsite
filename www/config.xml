@@ -9,4 +9,8 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <!--
+        <preference name="orientation" value="landscape" />
+        <preference name="orientation" value="portrait" />
+    -->
 </widget>
