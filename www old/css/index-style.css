@@ -11,12 +11,9 @@ background:white;
 }
 .newspaper
 {
--moz-column-count:1; /* Firefox */
--webkit-column-count:1; /* Safari and Chrome */
-column-count:1;
-column-fill:auto;
-column-width: auto|length;
-text-align:center;
+-moz-column-count:2; /* Firefox */
+-webkit-column-count:2; /* Safari and Chrome */
+column-count:2;
 }
 .home_page_img{
     margin-right:3px;
@@ -27,7 +24,7 @@ text-align:center;
 }
 
 /*column*/
-#pageone .ui-grid-b , #pageone .ui-grid-c ,#pageone .ui-grid-a{
+#pageone .ui-grid-b{
     display:none;
 }
 #pageone .ui-grid-c .home_page_img {
