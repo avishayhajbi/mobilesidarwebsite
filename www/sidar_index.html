@@ -41,13 +41,29 @@
 
 <div data-role="page" id="pageone">
     <div data-role="footer">
-        <h1><img id="shenkar_logo" src="img/shenkar_logo.png"> מכון שנקר לתיעוד וחקר העיצוב בישראל </h1>
-        <!-- nav bar -->
-
-        <!-- end nav bar -->
+        <h1>
+            <img id="shenkar_logo" src="img/shenkar_logo.png"> מכון שנקר לתיעוד וחקר העיצוב בישראל
+            <!-- nav bar -->
+            <img src="img/mobile-menu.png" id="nav_img">
+            <!-- end nav bar -->
+        </h1>
     </div>
     <img id="sidar_logo" src="img/sidar_logo.jpg"/>
 
+    <!-- menu -->
+        <nav id="nav_bar">
+            <a href="/html/">עיצוב תעשייתי</a> <br>
+            <a href="/css/">עצוב תכשיטים</a> <br>
+            <a href="/js/">עיצוב אופנה</a> <br>
+            <a href="/jquery/">עיצוב גרפי</a> <br>
+        </nav>
+
+    <script>
+        $( "#nav_img" ).click(function() {
+        $( "#nav_bar" ).slideToggle( "slow" );
+    });
+    </script>
+    <!-- end menu -->
 
     <div data-role="content" class="content">
         <!-- mobile columns

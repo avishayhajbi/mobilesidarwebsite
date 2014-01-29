@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>slideToggle demo</title>
+    <style>
+        p {
+        width: 10%px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+</head>
+<body>
+
+<img src="img/mobile-menu.png">
+<p>
+    This is the paragraph to end all paragraphs.  You
+    should feel <em>lucky</em> to have seen such a paragraph in
+    your life.  Congratulations!
+</p>
+
+<script>
+$( "img" ).click(function() {
+  $( "p" ).slideToggle( "slow" );
+});
+</script>
+
+</body>
+</html>

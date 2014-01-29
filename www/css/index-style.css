@@ -1,6 +1,8 @@
 #shenkar_logo{
-width:15px;
-height:15px;
+width:20px;
+height:20px;
+float:right;
+
 }
 
 #sidar_logo{
@@ -48,6 +50,16 @@ margin-right: 5px;
 /*end column*/
 
 /*menu*/
+#nav_img {
+position:relative;
+float:left;
+margin-top:2px;
+}
+#nav_bar{
+display:none;
+text-align:left;
+margin-left:5px;
+}
 /*end menu*/
 
 
