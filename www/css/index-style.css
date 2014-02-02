@@ -4,6 +4,12 @@ height:20px;
 float:right;
 
 }
+.ui-header .ui-title{
+margin-top: 0.6em;
+margin-right: 0px;
+margin-bottom: 0.8em;
+margin-left: 0px;
+}
 
 #sidar_logo{
 width:100%;
