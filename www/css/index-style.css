@@ -3,6 +3,10 @@ width:20px;
 height:20px;
 float:right;
 
+#nav_img{
+margin-top:15px;
+}
+
 }
 .ui-header .ui-title{
 margin-top: 0.6em;
@@ -77,7 +81,7 @@ margin-right: 5px;
       /* Toggle button */
       label#navbuttontop {
       padding: 0;
-
+      margin-top:2px;
       float: left;
       /* This causes us to have to move one less thing when :checked, but pushes the header to the right and brings it off of center */
 
@@ -226,8 +230,10 @@ margin-right: 5px;
           #cssmenu > ul > li > a {
           font-size: .9em;
           display: block;
-          background: url(menu_images/pattern.png) top left repeat;
+          /*background: url(../img/menu/pattern.png) top left repeat;*/
+          /*background: url(../img/menu/pattern.png) top left repeat;*/
           color: #ffffff;
+          /***********bottons border color**********/
           border: 1px solid #ba2f14;
           border-top: none;
           text-shadow: 0 -1px 1px #751d0c;
@@ -246,10 +252,10 @@ margin-right: 5px;
           border-bottom: none;
           }
           #cssmenu > ul > li.has-sub > a span {
-          background: url(../www/img/menu/icon_plus.png) 96% center no-repeat;
+          background: url(../img/menu/icon_plus.png) 96% center no-repeat;
           }
           #cssmenu > ul > li.has-sub.active > a span {
-          background: url(../www/img/menu/icon_minus.png) 96% center no-repeat;
+          background: url(../img/menu/icon_minus.png) 96% center no-repeat;
           }
 
 
@@ -290,6 +296,8 @@ margin-right: 5px;
           color: #e94f31;
           }
           /* end sub menu*/
-
+        nav #cssmenu ul li{
+        background:;
+        }
       /*end menu & sum menu*/
 /*end menu*/
