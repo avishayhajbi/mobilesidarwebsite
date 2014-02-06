@@ -1,6 +1,10 @@
-/* rotate screen */
-
-/* end rotate screen */
+/* scroll screen */
+ $(document).ready(function(){
+    touchMove = function(event) {
+        event.preventDefault();
+    }
+    });
+/* end scroll screen */
 
 /*menu*/
  $(document).ready(function(){
