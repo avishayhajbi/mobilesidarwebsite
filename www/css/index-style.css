@@ -309,13 +309,12 @@ margin-right: 5px;
 .workinfo_img{
   width: 250px;
   height:250px;
-  margin-bottom:5px;
 }
 
 
 .ui-collapsible .ui-icon{
 	/*background-position: -180px 50%;/*Position of up icon in icon sprite*/
-	margin-left:200px;
+	margin-left:80%;
 }
 
 .ui-collapsible-collapsed .ui-icon{
@@ -337,13 +336,23 @@ margin-right: 5px;
 .collapse{
 	text-align:center;
 	display:inline-block;
-	width:250px;
-	height:100%;
+	width:65%;
+	height:90%;
 	margin:0;
 	padding:0;
 	margin-right:5px;
+	margin-left:5px;
+	margin-bottom:20px;
+	margin-top:20px;
+	
 }
-.collapse a .ui-btn-text{
+.inner_menu_collapse a .ui-btn-text{
 	z-index:0;
+}
+.inner_menu_collapse{
+	margin:0;
+	padding:0;
+	width:100%;
+	margin-top:9px;
 }​
 /*end work info*/
