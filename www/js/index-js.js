@@ -37,3 +37,19 @@
 });
 /*end menu*/
 
+/* page transport*/
+$(document).on('pagebeforeshow', '#page', function(){ 
+    $(document).on('click', '.home_page_img', function(){    
+    	/*$.mobile.changePage( "searchresults.php", {
+		  type: "post",
+		  data: $("form#search").serialize()
+		});*/
+        //$.mobile.navigate( "workinfo.html", { transition : "pop", info: "" });
+        //$.mobile.changePage( "workinfo.html", { transition: "slideup"});
+    });   
+});
+/* end page transport */
+
+$('.information').on("expand", function(e){
+    $(e.target + '.ui-btn').addClass('ui-btn-active').collapsible("refresh");
+});

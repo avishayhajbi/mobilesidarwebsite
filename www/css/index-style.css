@@ -2,11 +2,9 @@
 width:20px;
 height:20px;
 float:right;
-
-#nav_img{
-margin-top:15px;
 }
-
+#nav_img{
+margin-top:0px;
 }
 .ui-header .ui-title{
 margin-top: 0.6em;
@@ -29,13 +27,15 @@ column-count:1;
 column-fill:auto;
 column-width: auto|length;
 text-align:center;
+-webkit-transform': 'translate(0, 100%);
 }
 .home_page_img{
     margin-right:3px;
 }
-#page .home_page_img {
+.home_page_img {
   width:150px;
   height: 150px;
+  margin-bottom:3px;
 }
 
 /*column*/
@@ -108,6 +108,7 @@ margin-right: 5px;
       /*margin: 0;*/
       margin-top: 14px;
       padding: 0;
+      z-index:1;
       }
 
       label#navbuttontop {
@@ -303,3 +304,46 @@ margin-right: 5px;
         }
       /*end menu & sum menu*/
 /*end menu*/
+
+/*work info*/
+.workinfo_img{
+  width: 250px;
+  height:250px;
+  margin-bottom:5px;
+}
+
+
+.ui-collapsible .ui-icon{
+	/*background-position: -180px 50%;/*Position of up icon in icon sprite*/
+	margin-left:200px;
+}
+
+.ui-collapsible-collapsed .ui-icon{
+    /*background-position: -216px 50%;/*Position of down icon in icon sprite*/
+}
+.ui-collapsible .ui-btn-text{
+	margin-right:20px;
+	z-index:0;
+}
+
+.collapse p{
+	margin:0;
+	padding:0;
+}
+.ui-btn-inner{
+    text-align:center;
+}
+
+.collapse{
+	text-align:center;
+	display:inline-block;
+	width:250px;
+	height:100%;
+	margin:0;
+	padding:0;
+	margin-right:5px;
+}
+.collapse a .ui-btn-text{
+	z-index:0;
+}​
+/*end work info*/
