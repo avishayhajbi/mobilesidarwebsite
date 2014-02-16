@@ -1,14 +1,17 @@
 /* Smartphones (portrait) ----------- */
 @media only screen
-and (min-width : 600px){
-  /* Styles
-  #pageone .ui-grid-a,#pageone .ui-grid-b{
-    display:none;
-  }
-  #pageone .ui-grid-c{
-      display:block;
-    }
-  */
+and (min-width : 800px){
+	.workinfo_img{
+		float: right;
+		
+	}
+	.collapse{
+		width: 100%;
+
+	}
+	.inner_menu_collapse{
+		
+	}
 }
 
 /* Smartphones (portrait and landscape) ----------- */

@@ -210,25 +210,25 @@ margin-right: 5px;
           padding: 0;
           }
           #cssmenu > ul > li:first-child:hover {
-          background: #66665e;
+          /*background: #66665e;
           background: -moz-linear-gradient(#66665e 0%, #45463d 100%);
           background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66665e), color-stop(100%, #45463d));
           background: -webkit-linear-gradient(#66665e 0%, #45463d 100%);
-          background: linear-gradient(#66665e 0%, #45463d 100%);
+          background: linear-gradient(#66665e 0%, #45463d 100%);*/
           }
           #cssmenu > ul > li {
           background: #e94f31;
           background: -moz-linear-gradient(#e94f31 0%, #d13516 100%);
           background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e94f31), color-stop(100%, #d13516));
           background: -webkit-linear-gradient(#e94f31 0%, #d13516 100%);
-          background: linear-gradient(#e94f31 0%, #d13516 100%);
+          background: linear-gradient(#FDFDFF 0%, #080909 100%);
           }
           #cssmenu > ul > li:hover {
-          background: #e84323;
+          /*background: #e84323;
           background: -moz-linear-gradient(#e84323 0%, #c33115 100%);
           background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e84323), color-stop(100%, #c33115));
           background: -webkit-linear-gradient(#e84323 0%, #c33115 100%);
-          background: linear-gradient(#e84323 0%, #c33115 100%);
+          background: linear-gradient(#e84323 0%, #c33115 100%);*/
           }
           #cssmenu > ul > li > a {
           font-size: .9em;
@@ -237,9 +237,9 @@ margin-right: 5px;
           /*background: url(../img/menu/pattern.png) top left repeat;*/
           color: #ffffff;
           /***********bottons border color**********/
-          border: 1px solid #ba2f14;
+          /*border: 1px solid #FFFFFF;*/
           border-top: none;
-          text-shadow: 0 -1px 1px #751d0c;
+          text-shadow: 0 -1px 1px #000000;
           }
           #cssmenu > ul > li > a > span {
           display: block;
@@ -307,8 +307,9 @@ margin-right: 5px;
 
 /*work info*/
 .workinfo_img{
-  width: 250px;
-  height:250px;
+  width: 330px;
+  height:330px;
+  
 }
 
 
@@ -336,15 +337,13 @@ margin-right: 5px;
 .collapse{
 	text-align:center;
 	display:inline-block;
-	width:65%;
-	height:90%;
+	width:50%;
+	height:100%;
 	margin:0;
 	padding:0;
-	margin-right:5px;
 	margin-left:5px;
 	margin-bottom:20px;
 	margin-top:20px;
-	
 }
 .inner_menu_collapse a .ui-btn-text{
 	z-index:0;
@@ -353,6 +352,7 @@ margin-right: 5px;
 	margin:0;
 	padding:0;
 	width:100%;
-	margin-top:9px;
+	height:100%;
+	margin-top:10px;
 }​
 /*end work info*/
