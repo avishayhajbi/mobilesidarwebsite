@@ -1,17 +1,19 @@
 /* Smartphones (portrait) ----------- */
 @media only screen
-and (min-width : 800px){
+and (min-width : 710px){
 	.workinfo_img{
-		float: right;
-		
+		float: right;	
+	}
+	.collapse .information{
+		width: 100%;
 	}
 	.collapse{
-		
-
+		overflow: scroll;
 	}
 	.inner_menu_collapse{
-		
+		margin-top:20px;
 	}
+
 }
 
 /* Smartphones (portrait and landscape) ----------- */

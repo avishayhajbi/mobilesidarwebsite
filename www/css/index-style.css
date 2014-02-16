@@ -39,13 +39,6 @@ text-align:center;
 }
 
 /*column*/
-#pageone .ui-grid-b , #pageone .ui-grid-c ,#pageone .ui-grid-a{
-    display:none;
-}
-#page .ui-grid-c .home_page_img {
-  width:180px;
-  height:180px;
-}
 
 .ui-block-a,
 .ui-block-b,
@@ -217,10 +210,10 @@ margin-right: 5px;
           background: linear-gradient(#66665e 0%, #45463d 100%);*/
           }
           #cssmenu > ul > li {
-          background: #e94f31;
-          background: -moz-linear-gradient(#e94f31 0%, #d13516 100%);
-          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e94f31), color-stop(100%, #d13516));
-          background: -webkit-linear-gradient(#e94f31 0%, #d13516 100%);
+          background: (#FDFDFF 0%, #080909 100%);
+          background: -moz-linear-gradient(#FDFDFF 0%, #080909 100%);
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FDFDFF), color-stop(100%, #080909));
+          background: -webkit-linear-gradient(#FDFDFF 0%, #080909 100%);
           background: linear-gradient(#FDFDFF 0%, #080909 100%);
           }
           #cssmenu > ul > li:hover {
@@ -235,11 +228,11 @@ margin-right: 5px;
           display: block;
           /*background: url(../img/menu/pattern.png) top left repeat;*/
           /*background: url(../img/menu/pattern.png) top left repeat;*/
-          color: #ffffff;
+          color: black;
           /***********bottons border color**********/
           /*border: 1px solid #FFFFFF;*/
           border-top: none;
-          text-shadow: 0 -1px 1px #000000;
+          text-shadow:0 -1px 1px #838081;
           }
           #cssmenu > ul > li > a > span {
           display: block;
@@ -338,12 +331,12 @@ margin-right: 5px;
 	text-align:center;
 	display:inline-block;
 	width:330px;
-	height:100%;
+	height:345px;
 	margin:0;
 	padding:0;
 	margin-left:5px;
 	margin-bottom:20px;
-	margin-top:20px;
+
 }
 .inner_menu_collapse a .ui-btn-text{
 	z-index:0;
@@ -353,17 +346,20 @@ margin-right: 5px;
 	padding:0;
 	width:100%;
 	height:100%;
-	margin-top:10px;
+	margin-top:20px;
 }
 .inner_menu_collapse #cssmenu{
 	width:100%;
 }
+
 .inner_menu_collapse #cssmenu > ul > li {
-          background: #e94f31;
-          background: -moz-linear-gradient(#e94f31 0%, #d13516 100%);
-          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e94f31), color-stop(100%, #d13516));
-          background: -webkit-linear-gradient(#e94f31 0%, #d13516 100%);
-         	/*change inner menu color*/
-          background: linear-gradient(#FDFDFF 0%, blue 100%);
-          }​
+   background: (#FDFDFF 0%, #80ACE9 100%);
+   background: -moz-linear-gradient(#FDFDFF 0%, #80ACE9 100%);
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FDFDFF), color-stop(100%, #80ACE9));
+   background: -webkit-linear-gradient(#FDFDFF 0%, #80ACE9 100%);
+   	/*change inner menu color*/
+    background: linear-gradient(#FDFDFF 0%, #80ACE9 100%);
+}
+
+​
 /*end work info*/
