@@ -3,10 +3,9 @@
 $(document).ready(function() {
 	touchMove = function(event) {
 		event.preventDefault();
-		scrolling_page();
 	};
 });
-/*scroll body*/
+/*scroll body
 
 $(document).ready(function() {
 	scrolling_page();

@@ -8,7 +8,9 @@ and (min-width : 710px){
 		width: 100%;
 	}
 	.collapse{
-		overflow: scroll;
+		height:345px !important;
+		overflow:scroll !important; 
+		width:50% !important;
 	}
 	.inner_menu_collapse{
 		margin-top:20px;
