@@ -354,5 +354,16 @@ margin-right: 5px;
 	width:100%;
 	height:100%;
 	margin-top:10px;
-}​
+}
+.inner_menu_collapse #cssmenu{
+	width:100%;
+}
+.inner_menu_collapse #cssmenu > ul > li {
+          background: #e94f31;
+          background: -moz-linear-gradient(#e94f31 0%, #d13516 100%);
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e94f31), color-stop(100%, #d13516));
+          background: -webkit-linear-gradient(#e94f31 0%, #d13516 100%);
+         	/*change inner menu color*/
+          background: linear-gradient(#FDFDFF 0%, blue 100%);
+          }​
 /*end work info*/
