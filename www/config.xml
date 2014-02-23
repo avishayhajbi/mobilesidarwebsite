@@ -8,6 +8,9 @@
         Apache Cordova Team
     </author>
     <content src="index.html" />
+    <!-- for SQL commands -->
+    <plugin name="SQLitePlugin" 
+	value="com.phonegap.plugin.sqlitePlugin.SQLitePlugin"/>
     <access origin="*" />
     <!--
         <preference name="orientation" value="landscape" />

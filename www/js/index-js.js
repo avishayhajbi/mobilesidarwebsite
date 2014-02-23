@@ -1,5 +1,4 @@
 /* scroll screen */
-
 $(document).ready(function() {
 	touchMove = function(event) {
 		event.preventDefault();
@@ -74,6 +73,12 @@ $(document).on('pagebeforeshow', '#page', function() {
 });
 /* end page transport */
 
-$('.information').on("expand", function(e) {
-	$(e.target + '.ui-btn').addClass('ui-btn-active').collapsible("refresh");
+/*send data from page to another*/
+
+/*end end data from page to another*/
+
+/* database call
+$(document).ready(function() {
+	document.addEventListener('deviceready', init, false);
 });
+/* end database call */
