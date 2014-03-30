@@ -31,7 +31,7 @@ $.ajax({
 		}
 		else alert ("No Internet Connection");
 	  },
-	  error: function (){
+	  error: function (data){
 	  	alert ("No Internet Connection");
 	  }
 	});
@@ -56,12 +56,13 @@ var getJSONdata=$.ajax({
 	//alert(myObject.name2); 
 }
 
+/*
 function displayWorkIdSelected(){
 	var value = window.localStorage.getItem("key");
 	if (value != null)
     alert(value);
 }
-
+*/
 
 
 /*remember things*/	
