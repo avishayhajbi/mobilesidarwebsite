@@ -4,8 +4,8 @@ $(document).ready(function() {
 		event.preventDefault();
 	};
 });
-/*scroll body
 
+/*scroll body
 $(document).ready(function() {
 	scrolling_page();
 });
@@ -82,3 +82,9 @@ $(document).ready(function() {
 	document.addEventListener('deviceready', init, false);
 });
 /* end database call */
+
+/* */
+$(document).ready(function() {
+
+});
+/* */

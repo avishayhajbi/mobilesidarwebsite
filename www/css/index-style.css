@@ -364,3 +364,7 @@ margin-right: 5px;
 
 ​
 /*end work info*/
+
+.clear{
+	clear: both;
+}
