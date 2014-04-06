@@ -83,7 +83,7 @@ import android.widget.LinearLayout;
  *
  *         // Load your application
  *         super.setIntegerProperty("splashscreen", R.drawable.splash); // load splash.jpg image from the resource drawable directory
- *         super.loadUrl("file:///android_asset/www/index.html", 3000); // show splash screen 3 sec before loading app
+ *         super.loadUrl("file:///android_asset/www/indexOld.html", 3000); // show splash screen 3 sec before loading app
  *       }
  *     }
  * </pre>
@@ -145,7 +145,7 @@ public class CordovaActivity extends Activity implements CordovaInterface {
 
 
     // The initial URL for our app
-    // ie http://server/path/index.html#abc?query
+    // ie http://server/path/indexOld.html#abc?query
     //private String url = null;
 
     private static int ACTIVITY_STARTING = 0;

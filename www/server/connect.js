@@ -1,10 +1,98 @@
+var myDomain = "http://avishay.eu5.org/";
+/*
+document.addEventListener("deviceready",onDeviceReady,false);
+function onDeviceReady() {	
+	 	navigator.globalization.getLocaleName(
+	    function (locale) {alert('locale: ' + locale.value + '\n');},
+	    function () {alert('Error getting locale\n');}
+	);
+}
+*/
+
 $(document).ready(function() {
+	console.log("****************** welcome to avishay app ******************");
+	// connect to DB when app starts
 	ajaxConnection();
-	//displayWorkIdSelected();
+	
+	// init main screen
+	var url = window.location.pathname;
+	if (url.lastIndexOf("index") != -1){
+		intitializeMainScreen();
+	}
 });
 
-document.addEventListener("deviceready", onDeviceReady, false);
 
+// initialized main screen with photos
+function ajaxConnection() {
+$.ajax({
+	  type:'GET',
+	  url: myDomain,
+	  //url:'127.0.0.1/functions.php?=function_to_call=0',
+	  data:"function_to_call=0", 
+	  success: function(data){
+	  	if (data != ""){
+			alert ("Connected"); // remove
+		}
+		else alert ("No Internet Connection");
+	  },
+	  error: function (data){
+	  	alert ("No Internet Connection");
+	  }
+	});
+}
+
+// save work id when pressed and get all information
+function onWorkClick (workId){
+	alert(workId);
+	window.localStorage.removeItem("key");
+    window.localStorage.setItem("key", workId);
+	// http://avishay.eu5.org/?function_to_call=2
+var getJSONdata=$.ajax({
+        type: "GET",
+        url: myDomain,
+        data: "function_to_call=2",
+        async: false,
+        dataType: 'json'
+    });
+    var jsonArray = getJSONdata.responseText;
+    	// alert(jsonArray); // display --works
+	var myObject = JSON.parse(jsonArray);
+		// alert(myObject['name']); // display --works
+		// alert(myObject.name2); // display --works
+}
+
+// init main screen
+function intitializeMainScreen (){
+	alert ("init main screen");
+var getJSONdata=$.ajax({
+        type: "GET",
+        url: myDomain,
+        data: "function_to_call=1",
+        async: false,
+        dataType: 'json'
+    });
+    /*
+    var jsonArray = getJSONdata.responseText;
+    	 alert(jsonArray); // display --works
+	var myObject = JSON.parse(jsonArray);
+		// alert(myObject['name']); // display --works
+		// alert(myObject.name2); // display --works
+	*/
+}
+
+
+
+/* COMMENTS -- nothing to do JUST to remember */
+
+/*
+function displayWorkIdSelected(){
+	var value = window.localStorage.getItem("key");
+	if (value != null)
+    alert(value);
+}
+*/
+
+/*
 // PhoneGap is ready
    function onDeviceReady() {
 	// window.localStorage.setItem("key", 'AAA');
@@ -18,52 +106,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
     // window.localStorage.clear();
     // localStorage is now empty
 }
-
-function ajaxConnection() {
-$.ajax({
-	  type:'GET',
-	  url:'http://avishay.eu5.org/',
-	  //url:'127.0.0.1/functions.php?=function_to_call=0',
-	  data:"function_to_call=1", 
-	  success: function(data){
-	  	if (data != ""){
-		alert ("Connected"); // remove
-		}
-		else alert ("No Internet Connection");
-	  },
-	  error: function (data){
-	  	alert ("No Internet Connection");
-	  }
-	});
-}
-
-function onWorkClick (workId){
-	//alert(workId);
-	window.localStorage.removeItem("key");
-    window.localStorage.setItem("key", workId);
-	// http://avishay.eu5.org/?function_to_call=2
-var getJSONdata=$.ajax({
-        type: "GET",
-        url: 'http://avishay.eu5.org',
-        data: "function_to_call=2",
-        async: false,
-        dataType: 'json'
-    });
-    var jsonArray = getJSONdata.responseText;
-    //alert(jsonArray);
-	var myObject = JSON.parse(jsonArray);
-	//alert(myObject['name']); 
-	//alert(myObject.name2); 
-}
-
-/*
-function displayWorkIdSelected(){
-	var value = window.localStorage.getItem("key");
-	if (value != null)
-    alert(value);
-}
 */
-
 
 /*remember things*/	
 /*

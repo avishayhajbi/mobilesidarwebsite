@@ -1,11 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.avishay.test" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.avishay.sidar" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Hello Cordova</name>
+    <access origin="*" />
     <preference name="loglevel" value="DEBUG" />
     <feature name="App">
         <param name="android-package" value="org.apache.cordova.App" />
     </feature>
-    <name>HelloWorld</name>
+    <name>Sidar</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
@@ -13,5 +14,8 @@
         Apache Cordova Team
     </author>
     <content src="index.html" />
-    <access origin="*" />
+    <access origin=".*" />
+    <plugin name="SQLitePlugin" value="com.phonegap.plugin.sqlitePlugin.SQLitePlugin" />
+    <plugin name="Storage" value="org.apache.cordova.Storage" />
+    <param name="android-package" value="org.apache.cordova.core.NetworkManager" />
 </widget>
