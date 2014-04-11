@@ -31,7 +31,7 @@ $.ajax({
 	  data:"function_to_call=0", 
 	  success: function(data){
 	  	if (data != ""){
-			alert ("Connected"); // remove
+			//alert ("Connected"); // remove
 		}
 		else alert ("No Internet Connection");
 	  },
@@ -43,7 +43,7 @@ $.ajax({
 
 // save work id when pressed and get all information
 function onWorkClick (workId){
-	alert(workId);
+	//alert(workId);
 	window.localStorage.removeItem("key");
     window.localStorage.setItem("key", workId);
 	// http://avishay.eu5.org/?function_to_call=2
@@ -63,7 +63,7 @@ var getJSONdata=$.ajax({
 
 // init main screen
 function intitializeMainScreen (){
-	alert ("init main screen");
+	//alert ("init main screen");
 var getJSONdata=$.ajax({
         type: "GET",
         url: myDomain,
