@@ -25,10 +25,10 @@ $.ajax({
 	  	if (data != ""){
 			//alert ("Connected"); // remove
 		}
-		else alert ("No Internet Connection");
+		//else alert ("No Internet Connection");
 	  },
 	  error: function (data){
-	  	alert ("No Internet Connection");
+	  	alert ("Error");
 	  }
 	});
 }
