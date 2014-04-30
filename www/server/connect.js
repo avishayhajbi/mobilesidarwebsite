@@ -1,13 +1,5 @@
 var myDomain = "http://avishay.eu5.org/";
-/*
-document.addEventListener("deviceready",onDeviceReady,false);
-function onDeviceReady() {	
-	 	navigator.globalization.getLocaleName(
-	    function (locale) {alert('locale: ' + locale.value + '\n');},
-	    function () {alert('Error getting locale\n');}
-	);
-}
-*/
+
 
 $(document).ready(function() {
 	console.log("****************** welcome to avishay app ******************");
