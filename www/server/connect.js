@@ -28,7 +28,7 @@ $.ajax({
 		//else alert ("No Internet Connection");
 	  },
 	  error: function (data){
-	  	alert ("Error");
+	  	//alert ("Error -- not a cell phone device");
 	  }
 	});
 }
