@@ -44,6 +44,18 @@
 		<script src="js/index-js.js"></script>
 		<!-- end my css/js files -->
 
+		<script>
+			jQuery.fn.center = function () {
+		    this.css("display","block");
+		    this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + $(window).scrollTop()) + "px");
+		    this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft()) + "px");
+		    return this;
+		};
+		
+		$(document).ready(function() {
+			$('.workinfo_img').center();
+		});
+		</script>
 	</head>
 	<body>
 		
@@ -221,113 +233,117 @@
 					</ul>
 				</div>
 			</nav>
-			<!-- end menu -->
+				
+				<img class="workinfo_img" src="images/G-CArR-GrC-120a.jpg" />
 			
-			<!-- work info -->
-			<div data-role="content" class="content" id="content" >
-				<div class="newspaper" dir="rtl">
-					<img class="workinfo_img" src="images/G-CArR-GrC-120a.jpg"/>
+			<!-- end menu -->
+			<div data-role="content" class="infoAndInnerMenu">
 
-					
-					<a href="#" class="Binfo">מידע</a>
-    				<a href="#" class="Bsearch">חיפוש מתקדם</a>
-    				
-					<div data-role="collapsible-set" class="collapse">
-						<div data-role="collapsible" class="information">
-							<h4>שם המעצב</h4>
-							<p>
-								פרטים
-							</p>
-						</div>
-						<div data-role="collapsible" class="information">
-							<h4>Designer</h4>
-							<p>
-								פרטים
-							</p>
-						</div>
-						<div data-role="collapsible" class="information">
-							<h4>שם העבודה</h4>
-							<p>
-								פרטים
-							</p>
-						</div>
-						<div data-role="collapsible" class="information">
-							<h4>שנה</h4>
-							<p>
-								פרטים
-							</p>
-						</div>
-						<div data-role="collapsible" class="information">
-							<h4>נושאים</h4>
-							<p>
-								פרטים
-							</p>
-						</div>
-						<div data-role="collapsible" class="information">
-							<h4>קטגוריות עיצוב</h4>
-							<p>
-								פרטים
-							</p>
-						</div>
-						<div data-role="collapsible" class="information">
-							<h4>לקוח</h4>
-							<p>
-								פרטים
-							</p>
-						</div>
-						<div data-role="collapsible" class="information">
-							<h4>טכניקה/מדיה</h4>
-							<p>
-								פרטים
-							</p>
-						</div>
-						<div data-role="collapsible" class="information">
-							<h4>גודל</h4>
-							<p>
-								פרטים
-							</p>
-						</div>
-						<div data-role="collapsible" class="information">
-							<h4>פריט</h4>
-							<p>
-								פרטים
-							</p>
-						</div>
-						<div data-role="collapsible" class="information">
-							<h4>ארץ</h4>
-							<p>
-								פרטים
-							</p>
-						</div>
-						<div data-role="collapsible" class="information">
-							<h4>צילום העבודה</h4>
-							<p>
-								פרטים
-							</p>
-						</div>
-						<div data-role="collapsible" class="information">
-							<h4>באדיבות</h4>
-							<p>
-								פרטים
-							</p>
-						</div>
-					</div>
-				<!-- end work info -->
-				<br>
-					<!--inner menu -->
-					<div data-role="collapsible-set" class="graphic_design inner_menu_collapse">
 						<div id="cssmenu">
 							<ul>
 								<li style="display:none"></li>
 
 								<li >
-									<a href="/text/"><span>חיפוש</span></a>
-									<!-- <ul>
-										<li>
-											<a href="/text/" >XXX</a>
-										</li> 
+									<a href="#" class="Binfo"><span>מידע</span></a>
+								</li>
+								<li >
+									<a href="#" class="Bsearch"><span>חיפוש מתקדם</span></a>
+								</li>
+							</ul>
+						</div>
+					
+    				
+    				
+					<!-- <div data-role="collapsible-set" class="collapse">
+						<div data-role="collapsible" class="">
+							<h4>שם המעצב</h4>
+							<p>
+								פרטים
+							</p>
+						</div>
+						<div data-role="collapsible" class="">
+							<h4>Designer</h4>
+							<p>
+								פרטים
+							</p>
+						</div>
+						<div data-role="collapsible" class="">
+							<h4>שם העבודה</h4>
+							<p>
+								פרטים
+							</p>
+						</div>
+						<div data-role="collapsible" class="">
+							<h4>שנה</h4>
+							<p>
+								פרטים
+							</p>
+						</div>
+						<div data-role="collapsible" class="">
+							<h4>נושאים</h4>
+							<p>
+								פרטים
+							</p>
+						</div>
+						<div data-role="collapsible" class="">
+							<h4>קטגוריות עיצוב</h4>
+							<p>
+								פרטים
+							</p>
+						</div>
+						<div data-role="collapsible" class="">
+							<h4>לקוח</h4>
+							<p>
+								פרטים
+							</p>
+						</div>
+						<div data-role="collapsible" class="">
+							<h4>טכניקה/מדיה</h4>
+							<p>
+								פרטים
+							</p>
+						</div>
+						<div data-role="collapsible" class="">
+							<h4>גודל</h4>
+							<p>
+								פרטים
+							</p>
+						</div>
+						<div data-role="collapsible" class="">
+							<h4>פריט</h4>
+							<p>
+								פרטים
+							</p>
+						</div>
+						<div data-role="collapsible" class="">
+							<h4>ארץ</h4>
+							<p>
+								פרטים
+							</p>
+						</div>
+						<div data-role="collapsible" class="">
+							<h4>צילום העבודה</h4>
+							<p>
+								פרטים
+							</p>
+						</div>
+						<div data-role="collapsible" class="">
+							<h4>באדיבות</h4>
+							<p>
+								פרטים
+							</p>
+						</div>
+					</div> -->
+				<!-- end work info -->
+				<br>
+					<!--inner menu -->
+					<!-- <div data-role="collapsible-set" class="graphic_design inner_menu_collapse">
+						<div id="">
+							<ul>
+								<li style="display:none"></li>
 
-									</ul>-->
+								<li >
+									<a href="/text/"><span>חיפוש</span></a>
 								</li>
 								<li>
 									<a href="/text/"><span>מעצבים</span></a>
@@ -354,10 +370,13 @@
 								
 
 							</ul>
-						</div>
-					</div>
+						</div> 
+					</div>-->
 					<!-- end inner menu -->
-					<br>
+			</div>
+			<!-- work info -->
+			<div data-role="content" class="content" id="content" >
+				<div class="newspaper" dir="rtl">
 					<img class="home_page_img" src="images/G-CArR-GrC-120a.jpg"/>
 					<img class="home_page_img" src="images/G-Dav-P-14.jpg"/>
 					<img class="home_page_img" src="images/G-CArR-GrC-120a.jpg"/>

@@ -79,12 +79,16 @@ $(document).ready(function() {
            
 	$(".Binfo").click(function() {
 		$(".collapse").toggle("fast", function() {
-			// Animation complete.
+			 $('html, .Binfo').css({
+			 'margin-bottom' : '10px'
+			 });
 		});
 	});
 	$(".Bsearch").click(function() {
 		$(".inner_menu_collapse").toggle("fast", function() {
-			// Animation complete.
+			$('html, .Bsearch').css({
+			 'margin-bottom' : '10px'
+			 });
 		});
 	});
 });

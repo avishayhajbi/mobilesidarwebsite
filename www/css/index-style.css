@@ -36,6 +36,7 @@ column-fill:auto;
 column-width: auto|length;
 text-align:center;
 -webkit-transform': 'translate(0, 100%);
+margin:auto;
 }
 .home_page_img{
     margin-right:3px;
@@ -218,7 +219,7 @@ margin-right: 5px;
           background: -webkit-linear-gradient(#66665e 0%, #45463d 100%);
           background: linear-gradient(#66665e 0%, #45463d 100%);*/
           }
-          #cssmenu > ul > li {
+        #cssmenu > ul > li { /* menu color*/
           background: (#FDFDFF 0%, #080909 100%);
           background: -moz-linear-gradient(#FDFDFF 0%, #080909 100%);
           background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FDFDFF), color-stop(100%, #080909));
@@ -271,7 +272,7 @@ margin-right: 5px;
           border-right: 1px solid #a2a194;
           border-left: 1px solid #a2a194;
           }
-          #cssmenu ul ul li {
+         #cssmenu ul ul li { /*main menu changes*/
           padding: 0;
           border-bottom: 1px solid #d4d4d4;
           border-top: none;
@@ -309,61 +310,23 @@ margin-right: 5px;
 
 /*work info*/
 .workinfo_img{
-  width: 330px;
-  height:330px;
-  margin:auto;
+  width: 302px;
+  height:302px;
+  margin: auto !important;
   margin-bottom:10px !important;
+  margin-top:15px !important;
 }
-
-
-.ui-collapsible .ui-icon{
-	/*background-position: -180px 50%;/*Position of up icon in icon sprite*/
-	margin-left:80%;
-}
-
-.ui-collapsible-collapsed .ui-icon{
-    /*background-position: -216px 50%;/*Position of down icon in icon sprite*/
-}
-.ui-collapsible .ui-btn-text{
-	margin-right:20px;
-	z-index:0;
-}
-
-.collapse p{
-	margin:0;
-	padding:0;
-}
-.ui-btn-inner{
+.infoAndInnerMenu{
+	-moz-column-count:1; /* Firefox */
+	-webkit-column-count:1; /* Safari and Chrome */
+	column-count:1;
+	column-fill:auto;
+	column-width: auto|length;
 	text-align:center;
+	-webkit-transform': 'translate(0, 100%);
+	margin-left: 2%;
 }
-
-.collapse{
-	text-align:center;
-	display:inline-block;
-	width:330px;*
-	/*width:100%;	 change insted 330px */
-	height:100%;
-	margin:0;
-	padding:0;
-	margin-left:5px;
-	margin-bottom:20px;
-}
-.inner_menu_collapse a .ui-btn-text{
-	z-index:0;
-	text-align: center; /* added */
-}
-.inner_menu_collapse{
-	text-align:center;
-	margin:0;
-	padding:0;
-	width:100%;
-	height:100%;
-}
-.inner_menu_collapse #cssmenu{
-	width:100%;
-}
-
-.graphic_design .inner_menu_collapse #cssmenu > ul > li {
+#infoAndInnerMenu #cssmenu > ul > li {
    background: (#FDFDFF 0%, #80ACE9 100%);
    background: -moz-linear-gradient(#FDFDFF 0%, #80ACE9 100%);
    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FDFDFF), color-stop(100%, #80ACE9));
@@ -371,22 +334,13 @@ margin-right: 5px;
    /*change inner menu color*/
    background: linear-gradient(#FDFDFF 0%, #80ACE9 100%);
 }
-.Binfo , .Bsearch{
-	margin: auto;
-	text-decoration: none;
-	text-align: center;
-	padding-top:5px;	
-	background-color:grey;
-	width:45%;
-	height: 30px;
-	display: inline-block;
-	color: black !important; 
+.infoAndInnerMenu #cssmenu ul li{
+	display:inline;
+	float: left;
+	margin:4px;
+	width: 47%;
 }
-.Binfo{
-	
-}
-.Bsearch{
-	
+.infoAndInnerMenu #cssmenu{
 }
 ​
 /*end work info*/
